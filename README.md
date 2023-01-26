@@ -1,2 +1,5 @@
-# basic-wordlist-generator
-a basic wordlist generator made with python
+## Basic Wordlist Generator
+
+
+
+![plot](./wl_usage.gif)<br>
