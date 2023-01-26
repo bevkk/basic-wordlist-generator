@@ -153,7 +153,12 @@ def keyWords(my_list,an,r,sc,s,uc,file):
 
                     
 def get_size(filename):
-    file_path = os.getcwd() + r'\wl_' + filename 
-    sz = os.path.getsize(file_path)
-    print(f'Size of this wordlist : ', sz, 'bytes')
+    try:
+        file_path = os.getcwd() + r'\wl_' + filename 
+        sz = os.path.getsize(file_path)
+        print(f'Size of this wordlist : ', sz, 'bytes')
+    except FileNotFoundError:
+        file_path = os.getcwd() + r'/wl_' + filename 
+        sz = os.path.getsize(file_path)
+        print(f'Size of this wordlist : ', sz, 'bytes')
 main()
